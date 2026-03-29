@@ -1,0 +1,21 @@
+# Salesforce CLI
+.sfdx/
+.sf/
+
+# Node
+node_modules/
+
+# Logs
+*.log
+
+# Coverage
+coverage/
+
+# OS / IDE
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
