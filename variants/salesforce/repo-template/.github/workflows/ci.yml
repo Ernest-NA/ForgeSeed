@@ -1,0 +1,22 @@
+name: Salesforce CI
+
+on:
+  pull_request:
+  push:
+    branches: [ main ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Install Salesforce CLI
+        run: npm install --global @salesforce/cli
+      - name: Show CLI version
+        run: sf --version
+      - name: Placeholder validation
+        run: |
+          echo "Add org authentication and real validate/deploy commands here"
